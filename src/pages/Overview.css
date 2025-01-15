@@ -1,0 +1,11 @@
+.button {
+    display: inline-block;
+    color: white;
+    margin-top: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    width: 10rem;
+    text-align: center;
+    background-image: linear-gradient(to right, #0010A3,#A900E8);
+}
