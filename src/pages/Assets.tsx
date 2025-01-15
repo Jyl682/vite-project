@@ -32,7 +32,7 @@ export default function Assets() {
                 <div className="fixed">
                     ASSETS
                     <div className="mt-2 h-[1px] bg-[#E5E5E5]"/>
-                    {assetColumns.map((item, index) => (
+                    {assetColumns.map((item) => (
                         <>
                             <a className="font-normal text-base text-[#818181] block" href={item.name}>{item.name}</a>
                             <div className="mt-1.5 h-[1px] bg-[#E5E5E5]"/>
@@ -41,12 +41,12 @@ export default function Assets() {
                 </div>
             </nav>
             <div className="basis-3/5">
-                {assetColumns.map((item, index) => (
+                {assetColumns.map((item) => (
                     <>
                         <div className="mt-1.5 mb-10 h-2 bg-gradient-to-r from-[#0010A3] to-[#A900E8]"/>
                         <p className="text-2xl mb-5">{item.name}</p>
                         <p className="text-[.66rem] mb-9">{item.description}</p>
-                        {item.downloads.map((downloadItem, index) => (
+                        {item.downloads.map((downloadItem) => (
                             <div className="mb-8">
                                 <div className="mt-7 h-[2px] bg-[#E5E5E5]"/>
                                 <p className="mt-3 font-semibold text-sm mb-3">{downloadItem.name}</p>
